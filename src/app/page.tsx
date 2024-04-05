@@ -1,113 +1,117 @@
-import Image from "next/image";
+import React from 'react';
 
-export default function Home() {
+const Home: React.FC = () => {
+  const experienceYears = 3.7; // Sudhakar Swain's total experience in years
+
+  // Function to calculate years and months from total months
+  const getYearsAndMonths = (totalMonths: number) => {
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    return { years, months };
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <div className="container">
+      <header>
+        <h1>SUDHAKAR SWAIN</h1>
+        <p>Email: Seemasudhakar143@gmail.com | Phone No.: +91-9348146253</p>
+        <h2>Professional Summary:</h2>
+        <p>
+          Dedicated Full-stack Developer with {experienceYears} years of experience in the software development industry.
+          Proven expertise in all phases of the software development lifecycle, including designing, developing, and
+          implementing test plans and processes. Skilled in JavaScript frameworks and libraries such as ES6, React.js,
+          jQuery, Jest, and Bootstrap. Strong interpersonal skills with a demonstrated ability to effectively communicate
+          with stakeholders at all levels. Possesses excellent work ethics, analytical thinking, and leadership qualities.
+          Enthusiastic team player with a self-motivated and goal-oriented approach. Efficient in time and task management,
+          capable of independently achieving complex objectives. Solid understanding of Object-Oriented Design (OOP) principles
+          and concepts.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <h2>Technical Skills:</h2>
+        <ul>
+          <li>Languages: JavaScript, TypeScript, HTML5, CSS, Python</li>
+          <li>JavaScript Frameworks and Libraries: ES6, React.js, jQuery, Jest, Bootstrap, Express.js, Redux, Axios, GraphQL, MaterialUI, Next.js</li>
+          <li>Database Management: MongoDB, MySQL</li>
+          <li>AWS Services: Lambda, S3, SQS, DynamoDB, EC2, IAM, CloudWatch</li>
+          <li>Testing Frameworks: Cypress, Jasmine JS, Jest</li>
+          <li>Version Control: Git, GitLab</li>
+          <li>Other Tools and Technologies: Docker, Redis, Firebase, Webpack, Enzyme, Flux</li>
+        </ul>
+        <h2>Employment History:</h2>
+        <p>
+          <strong>Associate Software Developer</strong><br />
+          Xinthesys LLP, New York<br />
+          (April 2020 – Present)<br />
+          <strong>Projects:</strong> Adept Web UI, The Scheduler Services<br />
+          <strong>Skills Utilized:</strong> JavaScript, React.js, Next.js, TypeScript, EJS, Node.js, MongoDB, CSS, Docker, Redis<br />
+          <strong>Operating Systems:</strong> Linux, Windows<br />
+          <strong>Database:</strong> MongoDB
+        </p>
+        <p>
+          <strong>Associate Software Engineer</strong><br />
+          COMPAD SYSTEMS PVT LTD, Hyderabad<br />
+          (Aug 2018 - Jan 2022)<br />
+          <strong>Projects:</strong> GMH (Graph my Health), HIMS (Hospital Information Management System)<br />
+          <strong>Skills Utilized:</strong> HTML, SCSS, Bootstrap, React.js, TypeScript, JavaScript, Next.js<br />
+          <strong>Operating Systems:</strong> Windows 10, Windows 11<br />
+          <strong>Development Tools:</strong> Visual Studio Code, WebStorm, IntelliJ
+        </p>
+        <p>
+          <strong>Project Experience:</strong><br />
+          <strong>Edelweiss SWIFT</strong><br />
+          (May 2021 - Jan 2022)<br />
+          <strong>Environment:</strong> Node.js, React.js, JavaScript, SASS, AWS Services, MongoDB, Agile Development, Jira, Git<br />
+          <strong>Responsibilities:</strong> MERN stack development for a digital client onboarding platform for Edelweiss partners.<br />
+          <strong>Multiple Projects</strong><br />
+          <strong>Environment:</strong> React.js, JavaScript, Node.js, SASS, MongoDB, Git<br />
+          <strong>Responsibilities:</strong> Full-stack development for various projects including a wedding venue website and an online news website.
+        </p>
+        <h2>Proposed Roles & Responsibilities:</h2>
+        <ul>
+          <li>Requirement analysis and client interaction.</li>
+          <li>Web application development using React.js.</li>
+          <li>Designing intuitive user interfaces.</li>
+          <li>Software development emphasizing modularity, scalability, and optimization.</li>
+          <li>Performance optimization and bug fixing.</li>
+          <li>Defect tracking and resolution.</li>
+        </ul>
+        <h2>Soft Skills:</h2>
+        <ul>
+          <li>Excellent communication and presentation abilities.</li>
+          <li>Adaptability to new technologies and environments.</li>
+          <li>Ownership and responsibility acceptance.</li>
+          <li>Quick learner, team player, and self-motivated individual.</li>
+        </ul>
+        <h2>Education:</h2>
+        <p>
+          <strong>Bachelor of Science (BSC)</strong> - Graduation from Odisha (19-Feb-2019): 48%<br />
+          <strong>Higher Secondary Certificate (CHSE), Odisha</strong> (31-May-2014): 58%<br />
+          <strong>High School Certificate (HSC), Odisha</strong> (10th) (28-June-2012): 65%
+        </p>
+        <h2>Hobbies & Interests:</h2>
+        <ul>
+          <li>Playing PUBG</li>
+          <li>Social work</li>
+          <li>Listening to music and internet surfing</li>
+        </ul>
+        <h2>Declaration:</h2>
+        <p>
+          I am confident in my knowledge and abilities in the field of Information Technology and am fully committed to contributing
+          effectively within a team environment. I declare that the information provided above is true to the best of my knowledge.
+        </p>
+      </header>
+      <footer style={{ 
+        textAlign: 'center',
+        marginTop: '20px',
+      }}>
+        <h2>Connect with me</h2>
+        <div>
+          <a href="https://github.com/yourgithub" target="_blank" style={{ color: '#333', marginRight: '10px' }}>GitHub</a>
+          <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" style={{ color: '#333', marginRight: '10px' }}>LinkedIn</a>
+          <a href="mailto:Seemasudhakar143@gmail.com" style={{ color: '#333' }}>Email</a>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </footer>
+    </div>
   );
-}
+};
+
+export default Home;
